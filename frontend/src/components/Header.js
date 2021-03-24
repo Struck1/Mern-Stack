@@ -8,19 +8,19 @@ function Header() {
       <Navbar bg='dark' expand='lg' variant='light' collapseOnSelect>
         <Container>
           <LinkContainer to='/'>
-            <Navbar.Brand >STRUCK</Navbar.Brand>
+            <Navbar.Brand>STRUCK</Navbar.Brand>
           </LinkContainer>
 
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='ml-auto'>
               <LinkContainer to='/cart'>
-                <Nav.Link >
+                <Nav.Link>
                   <i className='fas fa-shopping-cart'></i> CART
                 </Nav.Link>
               </LinkContainer>
               <LinkContainer to='/login'>
-                <Nav.Link >
+                <Nav.Link>
                   <i className='fas fa-user'></i> SIGN IN
                 </Nav.Link>
               </LinkContainer>
