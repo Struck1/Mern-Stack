@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import ProductPage from './pages/ProductPage';
 import CartPage from './pages/CartPage';
+import LoginPage from './pages/LoginPage';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <main className='py-2'>
         <Container>
+          <Route path='/login' component={LoginPage} />
           <Route path='/' exact component={HomePage} />
           <Route path='/products/:id' component={ProductPage} />
           <Route path='/cart/:id?' component={CartPage} />
